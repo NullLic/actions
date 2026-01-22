@@ -22,4 +22,7 @@ export default defineConfig({
     open: true, // 是否自动打开浏览器，可选
     cors: true // 允许跨域，避免内网访问时的跨域问题
   },
+  build: {
+    outDir: 'build'
+  }
 })
