@@ -1,6 +1,9 @@
 name: Nullicn Build
 on: push
 
+permissions:
+  contents: write  # 必须赋予写入权限，否则无法部署到 gh-pages 分支
+
 jobs:
   npm-build:
     name: Nullicn NPM Build
@@ -18,3 +21,9 @@ jobs:
         run: |
           npm install
           npm run build
+
+      - name: 部署到 GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: NULLICN build page  # 部署到 gh-pages 分支
+          folder: build     # 指定要部署的构建产物目录
