@@ -15,7 +15,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-  base: '/nulllic.github.io/actions/',
+  base: './',
   server: {
     host: '0.0.0.0',
     port: 5173, // 自定义端口，可选
