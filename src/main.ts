@@ -11,6 +11,4 @@ app.use(router)
 
 // 创建 Pinia 实例并挂载到 Vue 应用
 app.use(createPinia())
-
-
 app.mount('#app')
