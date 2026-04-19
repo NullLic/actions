@@ -23,6 +23,6 @@ export default defineConfig({
     cors: true // 允许跨域，避免内网访问时的跨域问题
   },
   build: {
-    outDir: 'build'
+    outDir: 'dist'
   }
 })
